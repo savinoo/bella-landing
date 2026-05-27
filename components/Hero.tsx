@@ -1,0 +1,55 @@
+import { Sparkles } from "lucide-react"
+import { ChatMockup } from "@/components/ChatMockup"
+import { CTAPrimary } from "@/components/CTAPrimary"
+import { CTASecondary } from "@/components/CTASecondary"
+import { Eyebrow } from "@/components/Eyebrow"
+
+const WHATSAPP_URL =
+  "https://wa.me/5528999301848?text=Oi%20Lucas%2C%20vi%20a%20Bella%20no%20site%20e%20quero%20saber%20mais%20pra%20minha%20cl%C3%ADnica"
+
+const BELLA_DEMO_URL = "https://wa.me/5521983962982"
+
+export function Hero() {
+  return (
+    <section className="relative min-h-[88vh] flex items-center px-6 py-16 md:py-24">
+      <div className="max-w-6xl mx-auto w-full grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16 items-center">
+        <div className="space-y-6 max-w-xl">
+          <Eyebrow icon={Sparkles} withDot>
+            Atendente IA para WhatsApp
+          </Eyebrow>
+
+          <h1 className="font-serif text-[44px] sm:text-6xl md:text-7xl leading-[1.02] tracking-[-0.02em] text-[#0F0F0F]">
+            Atendente de IA para sua clínica de estética.
+          </h1>
+
+          <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-lg">
+            Responde leads no WhatsApp 24 horas e agenda direto no Google
+            Calendar. Treinada nos procedimentos da sua clínica em 1 dia
+            útil.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 pt-2">
+            <CTAPrimary href={WHATSAPP_URL}>
+              Quero pra minha clínica
+            </CTAPrimary>
+            <CTASecondary href={BELLA_DEMO_URL}>
+              Ver Bella no WhatsApp
+            </CTASecondary>
+          </div>
+
+          <p className="text-sm text-[#737373]">
+            Resposta em até 30 minutos no WhatsApp
+          </p>
+        </div>
+
+        <div className="relative">
+          <div
+            aria-hidden
+            className="absolute -inset-8 -z-10 rounded-[3rem] bg-gradient-to-br from-[#25D366]/8 via-transparent to-transparent blur-2xl"
+          />
+          <ChatMockup />
+        </div>
+      </div>
+    </section>
+  )
+}
