@@ -11,14 +11,18 @@ const BELLA_DEMO_URL = "https://wa.me/5521983962982"
 
 export function Hero() {
   return (
-    <section className="relative min-h-[88vh] flex items-center px-6 py-16 md:py-24">
+    <section className="relative overflow-hidden min-h-[88vh] flex items-center px-6 py-16 md:py-24">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-32 -right-24 -z-10 h-[32rem] w-[32rem] rounded-full bg-[#FF6F61]/12 blur-[120px]"
+      />
       <div className="max-w-6xl mx-auto w-full grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16 items-center">
         <div className="space-y-6 max-w-xl">
           <Eyebrow icon={Sparkles} withDot>
             Feito no Rio para clínicas de estética
           </Eyebrow>
 
-          <h1 className="font-serif text-[44px] sm:text-6xl md:text-7xl leading-[1.02] tracking-[-0.02em] text-[#0F0F0F]">
+          <h1 className="font-serif-display text-[44px] sm:text-6xl md:text-7xl leading-[1.02] tracking-[-0.02em] text-[#0F0F0F]">
             Sua clínica não perde mais a cliente que chama no WhatsApp.
           </h1>
 
@@ -45,9 +49,15 @@ export function Hero() {
         <div className="relative">
           <div
             aria-hidden
-            className="absolute -inset-8 -z-10 rounded-[3rem] bg-gradient-to-br from-[#FF6F61]/18 via-[#FFB347]/14 to-transparent blur-2xl"
+            className="absolute -inset-10 -z-10 rounded-[3rem] bg-gradient-to-br from-[#FF6F61]/22 via-[#FFB347]/16 to-transparent blur-3xl"
           />
-          <ChatMockup />
+          <div
+            aria-hidden
+            className="absolute -bottom-12 -right-6 -z-10 h-48 w-48 rounded-full bg-[#FF6F61]/20 blur-3xl"
+          />
+          <div className="float-soft">
+            <ChatMockup />
+          </div>
         </div>
       </div>
     </section>
