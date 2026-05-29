@@ -36,8 +36,12 @@ const tempos: Tempo[] = [
 
 export function FunilCompleto() {
   return (
-    <section className="px-6 py-24 bg-white border-y border-[#F2D9CF]">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative overflow-hidden px-6 py-28 bg-white border-y border-[#F2D9CF]">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 h-72 w-[44rem] rounded-full bg-[#FF6F61]/10 blur-3xl"
+      />
+      <div className="relative max-w-6xl mx-auto">
         <div className="max-w-2xl">
           <Eyebrow>O funil completo</Eyebrow>
           <h2 className="mt-4 text-3xl md:text-5xl font-semibold tracking-[-0.02em] text-[#0F0F0F]">
@@ -49,20 +53,34 @@ export function FunilCompleto() {
           </p>
         </div>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-6 md:gap-4">
-          {tempos.map(({ step, icon: Icon, title, body, accent }, i) => {
-            const color = accent === "coral" ? "#FF6F61" : "#25D366"
-            return (
-              <div key={title} className="relative">
-                <div className="h-full p-8 rounded-2xl border border-[#ECECEC] bg-white">
+        <div className="relative mt-16">
+          <div
+            aria-hidden
+            className="hidden md:block absolute left-8 right-8 top-14 h-[2px] rounded-full bg-gradient-to-r from-[#FF6F61] via-[#25D366] to-[#FF6F61] opacity-40"
+          />
+          <div className="grid md:grid-cols-3 gap-6 md:gap-5">
+            {tempos.map(({ step, icon: Icon, title, body, accent }) => {
+              const color = accent === "coral" ? "#FF6F61" : "#25D366"
+              return (
+                <div
+                  key={title}
+                  className="relative z-10 h-full p-8 rounded-2xl border border-[#ECECEC] bg-white transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_-12px_rgba(15,15,15,0.12)] hover:border-[#F2D9CF] motion-reduce:transform-none"
+                >
                   <div className="flex items-center justify-between">
                     <div
-                      className="inline-flex size-12 items-center justify-center rounded-full"
-                      style={{ backgroundColor: `${color}1A`, color }}
+                      className="inline-flex size-14 items-center justify-center rounded-2xl border"
+                      style={{
+                        backgroundColor: `${color}14`,
+                        color,
+                        borderColor: `${color}33`,
+                      }}
                     >
                       <Icon className="size-6" strokeWidth={1.5} />
                     </div>
-                    <span className="font-serif text-2xl text-[#D4D4D4]">
+                    <span
+                      className="font-serif-display text-4xl"
+                      style={{ color: `${color}80` }}
+                    >
                       {step}
                     </span>
                   </div>
@@ -73,17 +91,9 @@ export function FunilCompleto() {
                     {body}
                   </p>
                 </div>
-                {i < tempos.length - 1 ? (
-                  <span
-                    aria-hidden
-                    className="hidden md:flex absolute top-1/2 -right-3 -translate-y-1/2 text-2xl text-[#D4D4D4]"
-                  >
-                    →
-                  </span>
-                ) : null}
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
       </div>
     </section>
