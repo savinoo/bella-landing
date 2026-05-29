@@ -14,12 +14,13 @@ const fraunces = Fraunces({
 })
 
 export const metadata: Metadata = {
-  title: "Bella, atendente IA para clínica de estética | Savino",
+  title: "Bella, atrai, atende e agenda para clínica de estética | Savino",
   description:
-    "A Bella responde os leads da sua clínica de estética no WhatsApp 24 horas e agenda no Google Calendar. Feita no Rio, instalada e acompanhada pela gente, no ar em um dia útil.",
+    "A gente traz cliente nova com conteúdo, a Bella responde no WhatsApp 24 horas e agenda no Google Calendar, e você vê de onde veio cada cliente. Feita no Rio, a gente vai até a sua clínica.",
   openGraph: {
-    title: "Bella, atendente IA para clínica de estética",
-    description: "Atende no WhatsApp 24h e agenda no Calendar. Feita no Rio, a gente vai na sua clínica.",
+    title: "Bella, atrai, atende e agenda para clínica de estética",
+    description:
+      "Traz cliente nova, atende no WhatsApp 24h, agenda no Calendar e mostra de onde veio cada cliente. Feita no Rio, a gente vai até você.",
     url: "https://bella.savinoteam.tech",
     siteName: "Bella by Savino",
     locale: "pt_BR",
@@ -27,8 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bella, atendente IA para clínica de estética",
-    description: "Atende no WhatsApp 24h e agenda no Calendar. Feita no Rio, a gente vai na sua clínica.",
+    title: "Bella, atrai, atende e agenda para clínica de estética",
+    description:
+      "Traz cliente nova, atende no WhatsApp 24h, agenda no Calendar e mostra de onde veio cada cliente. Feita no Rio, a gente vai até você.",
   },
 }
 
@@ -42,7 +44,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geist.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#FBF6F3] font-sans text-[#0F0F0F]">
+      <body className="grain min-h-full bg-[#FBF6F3] font-sans text-[#0F0F0F]">
         {children}
       </body>
     </html>
