@@ -15,17 +15,17 @@ export function Hero() {
       <div className="max-w-6xl mx-auto w-full grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16 items-center">
         <div className="space-y-6 max-w-xl">
           <Eyebrow icon={Sparkles} withDot>
-            Atendente IA para WhatsApp
+            Feito no Rio para clínicas de estética
           </Eyebrow>
 
           <h1 className="font-serif text-[44px] sm:text-6xl md:text-7xl leading-[1.02] tracking-[-0.02em] text-[#0F0F0F]">
-            Atendente de IA para sua clínica de estética.
+            Sua clínica não perde mais a cliente que chama no WhatsApp.
           </h1>
 
           <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-lg">
-            Responde leads no WhatsApp 24 horas e agenda direto no Google
-            Calendar. Treinada nos procedimentos da sua clínica em 1 dia
-            útil.
+            A Bella responde no WhatsApp na hora, de dia e de noite, e agenda
+            direto no seu Google Calendar. No ar em um dia útil, treinada nos
+            procedimentos e nos preços da sua clínica.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 pt-2">
@@ -38,14 +38,14 @@ export function Hero() {
           </div>
 
           <p className="text-sm text-[#737373]">
-            Resposta em até 30 minutos no WhatsApp
+            A gente atende no Rio e vai até a sua clínica
           </p>
         </div>
 
         <div className="relative">
           <div
             aria-hidden
-            className="absolute -inset-8 -z-10 rounded-[3rem] bg-gradient-to-br from-[#25D366]/8 via-transparent to-transparent blur-2xl"
+            className="absolute -inset-8 -z-10 rounded-[3rem] bg-gradient-to-br from-[#25D366]/10 via-[#FFB347]/8 to-transparent blur-2xl"
           />
           <ChatMockup />
         </div>

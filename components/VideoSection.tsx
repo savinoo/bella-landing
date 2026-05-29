@@ -4,7 +4,7 @@ import LiteYouTubeEmbed from "react-lite-youtube-embed"
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css"
 import { Eyebrow } from "@/components/Eyebrow"
 
-const VIDEO_ID = process.env.NEXT_PUBLIC_VIDEO_ID || "PLACEHOLDER_VIDEO_ID"
+const VIDEO_ID = process.env.NEXT_PUBLIC_VIDEO_ID
 
 export function VideoSection() {
   return (
@@ -16,12 +16,30 @@ export function VideoSection() {
         </h2>
       </div>
       <div className="mt-12 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-[0_24px_64px_-16px_rgba(15,15,15,0.18)] border border-[#ECECEC]">
-        <LiteYouTubeEmbed
-          id={VIDEO_ID}
-          title="Demo da Bella, atendente IA pra clínica de estética"
-          poster="maxresdefault"
-          noCookie
-        />
+        {VIDEO_ID ? (
+          <LiteYouTubeEmbed
+            id={VIDEO_ID}
+            title="Demo da Bella, atendente IA pra clínica de estética"
+            poster="maxresdefault"
+            noCookie
+          />
+        ) : (
+          <div className="aspect-video bg-[#FAFAFA] flex flex-col items-center justify-center gap-4 px-6 text-center">
+            <p className="text-lg text-[#404040]">
+              O vídeo da demo está chegando. Enquanto isso, fale com a Bella ao
+              vivo no WhatsApp.
+            </p>
+            <a
+              href="https://wa.me/5521983962982"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-[#25D366] font-medium underline-offset-4 hover:underline"
+            >
+              Conversar com a Bella agora
+              <span aria-hidden>→</span>
+            </a>
+          </div>
+        )}
       </div>
     </section>
   )

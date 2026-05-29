@@ -21,8 +21,8 @@ const bullets: Bullet[] = [
   },
   {
     icon: Sparkles,
-    title: "Treinada nos seus procedimentos",
-    body: "Sabe que drenagem linfática custa R$ 150 e dura 60 minutos. Sabe seu endereço, horário e profissionais. Fala com a voz da sua clínica.",
+    title: "Treinada na sua clínica",
+    body: "Sabe que drenagem linfática custa R$ 150 e dura 60 minutos. Sabe seu endereço, horário e formas de pagamento. Fala com a voz da sua clínica.",
   },
   {
     icon: ShieldCheck,

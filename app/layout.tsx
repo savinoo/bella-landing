@@ -16,10 +16,10 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Bella, atendente IA para clínica de estética | Savino",
   description:
-    "Responde leads no WhatsApp 24h e agenda direto no Google Calendar. Setup R$ 1.997 com 30 dias de garantia.",
+    "A Bella responde os leads da sua clínica de estética no WhatsApp 24 horas e agenda no Google Calendar. Feita no Rio, instalada e acompanhada pela gente, no ar em um dia útil.",
   openGraph: {
     title: "Bella, atendente IA para clínica de estética",
-    description: "Responde leads no WhatsApp 24h e agenda no Calendar",
+    description: "Atende no WhatsApp 24h e agenda no Calendar. Feita no Rio, a gente vai na sua clínica.",
     url: "https://bella.savinoteam.tech",
     siteName: "Bella by Savino",
     locale: "pt_BR",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bella, atendente IA para clínica de estética",
-    description: "Responde leads no WhatsApp 24h e agenda no Calendar",
+    description: "Atende no WhatsApp 24h e agenda no Calendar. Feita no Rio, a gente vai na sua clínica.",
   },
 }
 

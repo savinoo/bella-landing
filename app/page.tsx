@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero"
 import { VideoSection } from "@/components/VideoSection"
 import { ValueBullets } from "@/components/ValueBullets"
+import { ComoFunciona } from "@/components/ComoFunciona"
 import { FAQ } from "@/components/FAQ"
 import { Pricing } from "@/components/Pricing"
 import { LiveDemo } from "@/components/LiveDemo"
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <VideoSection />
       <ValueBullets />
+      <ComoFunciona />
       <FAQ />
       <Pricing />
       <LiveDemo />

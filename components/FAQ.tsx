@@ -8,16 +8,20 @@ import { Eyebrow } from "@/components/Eyebrow"
 
 const faqs = [
   {
-    q: "Quanto custa pra manter rodando depois?",
-    a: "A Bella usa OpenAI ou Anthropic na chave de API sua. Custo médio fica entre R$ 30 e R$ 80 por mês dependendo do volume de conversas. Você paga a empresa de IA diretamente, não passa pela gente. A mensalidade nossa de R$ 197 é opcional e inclui monitoramento, correção de bug quando aparecer e um ajuste de prompt por mês.",
+    q: "Quanto custa?",
+    a: "A gente monta a proposta junto com você, porque depende do volume da sua clínica. Tem uma entrada pra começar, uma parte amarrada a resultado e uma mensalidade pra operação. Chama no WhatsApp que a gente fecha os números com você.",
   },
   {
     q: "E se não funcionar pra minha clínica?",
-    a: "Você paga R$ 1.000 no fechamento do contrato. Os outros R$ 997 só são cobrados depois que a Bella estiver 30 dias rodando no WhatsApp da sua clínica. Se em 30 dias ela não atender pelo menos 5 leads reais da sua clínica, você não paga a segunda parcela. Sem letra miúda.",
+    a: "Parte do valor só vale depois que a Bella estiver rodando e atendendo cliente de verdade no seu WhatsApp. O risco de começar fica do nosso lado, não do seu.",
+  },
+  {
+    q: "A IA não vai inventar coisa errada com a minha cliente?",
+    a: "A Bella só fala do que está cadastrado na sua clínica. Não inventa preço, não inventa horário e não confirma o que não sabe. Quando foge do que ela conhece, passa pra uma pessoa na hora.",
   },
   {
     q: "Quanto tempo até estar no ar?",
-    a: "1 dia útil. Você manda os procedimentos, preços, horário e endereço. Eu monto, treino no contexto da sua clínica, conecto no seu número do WhatsApp e testamos juntos antes de liberar pros clientes.",
+    a: "Um dia útil. Você manda os procedimentos, preços, horário e endereço. A gente monta, treina no contexto da sua clínica, conecta no WhatsApp e testa junto antes de liberar pra cliente.",
   },
 ]
 
