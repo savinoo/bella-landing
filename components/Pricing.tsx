@@ -6,9 +6,11 @@ const WHATSAPP_URL =
   "https://wa.me/5528999301848?text=Oi%20Lucas%2C%20vi%20a%20Bella%20no%20site%20e%20quero%20saber%20mais%20pra%20minha%20cl%C3%ADnica"
 
 const features = [
+  "Conteúdo de vídeo pra atrair cliente nova",
   "Atendente de IA no WhatsApp da clínica",
   "Agendamento direto no Google Calendar",
   "Captura de cada lead que chega",
+  "Página de métricas mostrando de onde veio cada cliente",
   "Instalada na voz e nos preços da sua clínica",
   "No ar em um dia útil",
   "Acompanhamento e ajustes todo mês",
