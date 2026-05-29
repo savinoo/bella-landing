@@ -51,7 +51,7 @@ export function ValueBullets() {
               key={title}
               className="group p-8 rounded-2xl border border-[#ECECEC] bg-white transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(15,15,15,0.06)] hover:border-[#D4D4D4] motion-reduce:transform-none"
             >
-              <div className="inline-flex size-12 items-center justify-center rounded-full bg-[#25D366]/8 text-[#25D366]">
+              <div className="inline-flex size-12 items-center justify-center rounded-full bg-[#FF6F61]/10 text-[#FF6F61]">
                 <Icon className="size-6" strokeWidth={1.5} />
               </div>
               <h3 className="mt-6 text-xl font-semibold text-[#0F0F0F]">

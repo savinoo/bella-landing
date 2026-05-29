@@ -25,7 +25,7 @@ export function Pricing() {
       </div>
 
       <div className="mt-12 max-w-lg mx-auto">
-        <div className="relative p-8 md:p-10 rounded-3xl bg-white border-2 border-[#25D366] shadow-[0_4px_32px_-8px_rgba(37,211,102,0.16)]">
+        <div className="relative p-8 md:p-10 rounded-3xl bg-white border-2 border-[#FF6F61] shadow-[0_4px_32px_-8px_rgba(255,111,97,0.18)]">
           <div className="text-center">
             <p className="text-[#404040] leading-relaxed">
               Cada clínica tem um volume e uma realidade. Por isso a gente monta

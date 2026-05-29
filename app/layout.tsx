@@ -42,7 +42,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geist.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#FAFAFA] font-sans text-[#0F0F0F]">
+      <body className="min-h-full bg-[#FBF6F3] font-sans text-[#0F0F0F]">
         {children}
       </body>
     </html>

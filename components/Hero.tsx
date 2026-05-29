@@ -45,7 +45,7 @@ export function Hero() {
         <div className="relative">
           <div
             aria-hidden
-            className="absolute -inset-8 -z-10 rounded-[3rem] bg-gradient-to-br from-[#25D366]/10 via-[#FFB347]/8 to-transparent blur-2xl"
+            className="absolute -inset-8 -z-10 rounded-[3rem] bg-gradient-to-br from-[#FF6F61]/18 via-[#FFB347]/14 to-transparent blur-2xl"
           />
           <ChatMockup />
         </div>

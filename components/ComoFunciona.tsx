@@ -24,7 +24,7 @@ const steps: Step[] = [
 
 export function ComoFunciona() {
   return (
-    <section className="px-6 py-24 bg-white">
+    <section className="px-6 py-24 bg-[#FFF4F0]">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl">
           <Eyebrow>Como funciona</Eyebrow>
@@ -38,23 +38,42 @@ export function ComoFunciona() {
           </p>
         </div>
 
-        <div className="mt-12 grid sm:grid-cols-3 gap-6">
-          {steps.map(({ icon: Icon, title, body }) => (
-            <div
-              key={title}
-              className="p-8 rounded-2xl border border-[#ECECEC] bg-[#FAFAFA]"
-            >
-              <div className="inline-flex size-12 items-center justify-center rounded-full bg-[#25D366]/8 text-[#25D366]">
-                <Icon className="size-6" strokeWidth={1.5} />
+        <div className="mt-12 grid lg:grid-cols-2 gap-10 items-center">
+          <div className="relative">
+            <img
+              src="/founders-rio.jpg"
+              alt="Lucas e Thaiz, o time carioca por trás da Bella, com o Rio de Janeiro ao fundo"
+              width={1400}
+              height={1866}
+              loading="lazy"
+              className="w-full aspect-[4/5] object-cover rounded-3xl shadow-[0_24px_64px_-16px_rgba(15,15,15,0.18)]"
+              style={{ objectPosition: "center 26%" }}
+            />
+            <p className="mt-3 text-sm text-[#737373] text-center">
+              A gente, no Rio. Quem vai cuidar da sua clínica de perto.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {steps.map(({ icon: Icon, title, body }) => (
+              <div
+                key={title}
+                className="flex gap-4 p-6 rounded-2xl border border-[#F2D9CF] bg-white"
+              >
+                <div className="inline-flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF6F61]/10 text-[#FF6F61]">
+                  <Icon className="size-6" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#0F0F0F]">
+                    {title}
+                  </h3>
+                  <p className="mt-1 text-base text-[#404040] leading-relaxed">
+                    {body}
+                  </p>
+                </div>
               </div>
-              <h3 className="mt-6 text-xl font-semibold text-[#0F0F0F]">
-                {title}
-              </h3>
-              <p className="mt-3 text-base text-[#404040] leading-relaxed">
-                {body}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
