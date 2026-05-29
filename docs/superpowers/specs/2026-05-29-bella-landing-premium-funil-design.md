@@ -47,6 +47,8 @@ Publico primario: o cliente-ancora e o cliente 2, vistos numa visita presencial 
 
 Slot de resultados e case: posicao reservada logo depois do funil. Componente ResultadosCase definido com contrato de dados claro, mantido fora de page.tsx ate haver case real. Nao renderiza nada agora, para nao repetir o erro da caixa vazia.
 
+Slot do dashboard de metricas: posicao reservada dentro ou logo apos o tempo "Mostra" do funil. O dashboard e o entregavel de atribuicao que a frente paralela esta construindo. Mesma regra de honestidade do slot de case: a pagina nomeia o dashboard como entregavel, mas so coloca um screenshot real dele quando existir. Nada de mockup de dashboard inventado agora.
+
 ## 4. Mudancas por componente
 
 ### Hero (components/Hero.tsx)
@@ -64,9 +66,9 @@ Subtexto proposto: "A gente cuida das tres pontas. Traz cliente nova com conteud
 Tres tempos em cards ou faixa horizontal, com icone e cor:
 - Atrai (coral). "Conteudo de video que faz cliente nova chamar a sua clinica."
 - Atende (verde WhatsApp). "A Bella responde na hora e agenda, de dia e de noite."
-- Mostra (coral). "A gente liga cada conteudo ao agendamento que ele trouxe."
+- Mostra (coral). "Um dashboard mostra de onde veio cada agendamento."
 
-O tempo "Mostra" e o moat, atribuicao rastreavel. E o que separa o negocio do chatbot de R$197. Visualmente, sugerir o fluxo entre os tres (seta, linha ou numeracao) para o cerebro ler funil, nao tres features soltas.
+O tempo "Mostra" e o moat, atribuicao rastreavel, e agora um entregavel concreto: um dashboard de metricas que e produzido por uma frente paralela do projeto (sessao separada, em construcao) e entregue tanto a clinica quanto a nos. Nomear o dashboard como entregavel e mais forte que "a gente mede", porque vira uma coisa que a cliente recebe na mao. E o que separa o negocio do chatbot de R$197. Visualmente, sugerir o fluxo entre os tres (seta, linha ou numeracao) para o cerebro ler funil, nao tres features soltas.
 
 ### Como a Bella atende (components/ValueBullets.tsx)
 Mantem os 4 cards, que ja estao corrigidos (sem falar de profissionais ou equipe). Reposiciona como detalhe do tempo atende. Ajuste opcional do H2 atual "Atende, agenda, captura." para deixar claro que e o aprofundamento do tempo do meio do funil. Manter o card "PT BR sem alucinacao".
@@ -81,7 +83,7 @@ Os tres passos atuais (visita, no ar em um dia, acompanhamento mensal) continuam
 ### FAQ (components/FAQ.tsx)
 Mantem as 4 perguntas atuais e adiciona duas que o premium cria:
 - "Voces tambem trazem cliente nova ou so atendem?" Resposta no metodo: alem da Bella atender e agendar, a gente produz conteudo de video pra trazer cliente nova, e mostra qual conteudo virou agendamento.
-- "Como voces sabem que funcionou?" Resposta no moat de atribuicao: a gente liga cada peca de conteudo ao lead e ao agendamento que ela trouxe, entao da pra ver de onde veio cada cliente. Sem isso ninguem consegue provar resultado.
+- "Como voces sabem que funcionou?" Resposta no moat de atribuicao, agora nomeando o entregavel: voce recebe um dashboard que liga cada peca de conteudo ao lead e ao agendamento que ela trouxe, entao da pra ver de onde veio cada cliente. Sem isso ninguem consegue provar resultado.
 
 ### Pricing (components/Pricing.tsx)
 Mantem proposta sob medida, sem numero, e o modelo de risco invertido (entrada, parte amarrada a resultado, mensalidade). Adiciona na lista do que esta incluido uma linha de conteudo e atracao, para a pagina casar com o funil completo. O risco invertido continua sendo a resposta a objecao de preco.
@@ -99,6 +101,7 @@ Revisar title, description e og para incluir a ideia de trazer e atender, nao so
 
 - FunilCompleto.tsx: server component puro, sem estado, segue o padrao de ValueBullets e ComoFunciona (Eyebrow mais grid de cards). Recebe nada, dados internos. Coral nos tempos atrai e mostra, verde no atende.
 - ResultadosCase.tsx: definido com um contrato de dados (por exemplo lista de metricas com rotulo e valor, e um depoimento opcional com nome e cargo). Mantido fora de page.tsx ate haver case real. Documentar o shape no proprio arquivo para o drop-in futuro ser trivial.
+- DashboardPreview (slot dentro ou apos o tempo "Mostra"): area reservada para o screenshot real do dashboard de atribuicao quando a frente paralela entregar. Ate la, o tempo "Mostra" descreve o dashboard em texto e icone, sem imagem inventada. Quando o screenshot existir, ele entra como prova visual do moat. Coordenar o shape com a sessao que constroi o dashboard antes de fixar qualquer copy de metrica especifica.
 
 ## 6. Guardrail de honestidade (criterio duro)
 
@@ -124,8 +127,8 @@ Rebrand completo para estudio de aquisicao, paginas internas, blog, formulario p
 
 - A pagina conta o funil completo (atrai, atende, mostra), nao so atende.
 - O premium aparece como elevacao numa narrativa unica, sem catalogo de planos.
-- Atribuicao rastreavel visivel como o diferencial, nao escondida.
-- Nenhuma caixa vazia nem afirmacao de resultado que nao existe.
+- Atribuicao rastreavel visivel como o diferencial, nao escondida, com o dashboard nomeado como entregavel.
+- Nenhuma caixa vazia nem afirmacao de resultado que nao existe, e nenhum mockup de dashboard inventado.
 - Papeis de Lucas e Thaiz visiveis na secao dos fundadores.
 - Build passa, screenshot renderiza sem erro, Lucas aprova o visual antes de qualquer merge ou deploy.
 
@@ -135,6 +138,7 @@ Rebrand completo para estudio de aquisicao, paginas internas, blog, formulario p
 2. Layout exato do funil (tres cards versus faixa com setas), a decidir com screenshot.
 3. Se o componente ResultadosCase e construido ja agora (fora de page.tsx) ou so documentado, a decidir no plano.
 4. Ajuste de copy do Footer e da meta, a confirmar no preview.
+5. Coordenar com a sessao que constroi o dashboard de metricas: confirmar o formato e o que ele mostra antes de fixar copy de metrica especifica, e pegar o screenshot real quando existir para preencher o slot DashboardPreview.
 
 ## 11. Proximo passo
 
