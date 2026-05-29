@@ -23,6 +23,14 @@ const faqs = [
     q: "Quanto tempo até estar no ar?",
     a: "Um dia útil. Você manda os procedimentos, preços, horário e endereço. A gente monta, treina no contexto da sua clínica, conecta no WhatsApp e testa junto antes de liberar pra cliente.",
   },
+  {
+    q: "Vocês também trazem cliente nova ou só atendem?",
+    a: "Os dois. Além da Bella atender e agendar quem já chama, a gente produz conteúdo de vídeo pra trazer cliente nova, e mostra qual conteúdo virou agendamento. É o funil inteiro, não só o atendimento.",
+  },
+  {
+    q: "Como vocês sabem que funcionou?",
+    a: "Você tem uma página sua de métricas que liga cada peça de conteúdo ao lead e ao agendamento que ela trouxe, com a evolução ao longo do tempo. Dá pra ver de onde veio cada cliente. Sem isso ninguém consegue provar resultado de verdade.",
+  },
 ]
 
 export function FAQ() {
