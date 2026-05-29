@@ -6,8 +6,8 @@ export function Footer() {
           Bella
         </p>
         <p className="mt-4 text-[#404040] max-w-md">
-          Atendente de IA para clínica de estética. Construída por Lucas Savino,
-          engenheiro de IA.
+          Traz cliente, atende no WhatsApp e mostra de onde vem cada
+          agendamento. Feita no Rio por Lucas Savino e Thaiz.
         </p>
         <a
           href="https://savinoteam.tech"
