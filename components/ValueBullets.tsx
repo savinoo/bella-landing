@@ -36,12 +36,12 @@ export function ValueBullets() {
     <section className="px-6 py-24">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl">
-          <Eyebrow>O que a Bella faz</Eyebrow>
+          <Eyebrow>Por dentro do atendimento</Eyebrow>
           <h2 className="mt-4 text-3xl md:text-5xl font-semibold tracking-[-0.02em] text-[#0F0F0F]">
-            Atende, agenda, captura.
+            Como a Bella atende.
           </h2>
           <p className="mt-4 text-lg text-[#404040]">
-            Quatro coisas que cliente sente na pele.
+            Quatro coisas que a cliente sente na pele.
           </p>
         </div>
 
