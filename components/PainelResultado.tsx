@@ -53,7 +53,7 @@ export function PainelResultado() {
 
         <div className="mt-10 flex justify-center">
           <a
-            href="https://n8n.savinoteam.tech/dashboard/bella?token=58c72c4a71f971eef4fb39bf24cd0f88"
+            href="https://n8n.savinoteam.tech/dashboard/demo"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-[#FF6F61] underline underline-offset-4 hover:opacity-80 transition-opacity"
