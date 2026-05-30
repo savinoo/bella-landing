@@ -31,6 +31,10 @@ const faqs = [
     q: "Como vocês sabem que funcionou?",
     a: "Você tem uma página sua de métricas que liga cada peça de conteúdo ao lead e ao agendamento que ela trouxe, com a evolução ao longo do tempo. Dá pra ver de onde veio cada cliente. Sem isso ninguém consegue provar resultado de verdade.",
   },
+  {
+    q: "Como eu acompanho se está funcionando",
+    a: "Você recebe um painel só seu com os números em tempo real, agendamentos, atendimentos fora do horário e custo. A gente revisa junto e ajusta o que precisar.",
+  },
 ]
 
 export function FAQ() {

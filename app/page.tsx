@@ -4,6 +4,7 @@ import { Reveal } from "@/components/Reveal"
 import { FunilCompleto } from "@/components/FunilCompleto"
 import { ValueBullets } from "@/components/ValueBullets"
 import { ComoFunciona } from "@/components/ComoFunciona"
+import { PainelResultado } from "@/components/PainelResultado"
 import { FAQ } from "@/components/FAQ"
 import { Pricing } from "@/components/Pricing"
 import { VideoSection } from "@/components/VideoSection"
@@ -24,6 +25,9 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <ComoFunciona />
+        </Reveal>
+        <Reveal>
+          <PainelResultado />
         </Reveal>
         <Reveal>
           <FAQ />
