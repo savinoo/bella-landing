@@ -50,8 +50,7 @@ export function ComoFunciona() {
               style={{ objectPosition: "center 26%" }}
             />
             <p className="mt-3 text-sm text-[#737373] text-center">
-              A gente, no Rio. A Thaiz cuida do vídeo que atrai, o Lucas da IA
-              que atende, e os dois vão até você.
+              A gente, no Rio. Quem vai cuidar da sua clínica de perto.
             </p>
           </div>
 
