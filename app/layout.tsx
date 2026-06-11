@@ -13,14 +13,15 @@ const fraunces = Fraunces({
   axes: ["SOFT", "opsz"],
 })
 
+const DESCRIPTION =
+  "A Bella atrai, atende e agenda as clientes da sua clínica de estética no WhatsApp, 24h por dia. R$497 de setup e R$397 por mês."
+
 export const metadata: Metadata = {
   title: "Bella, atrai, atende e agenda para clínica de estética | Savino",
-  description:
-    "A Bella atrai, atende e agenda as clientes da sua clínica de estética no WhatsApp, 24h por dia. R$497 de setup e R$397 por mês.",
+  description: DESCRIPTION,
   openGraph: {
     title: "Bella, atrai, atende e agenda para clínica de estética",
-    description:
-      "A Bella atrai, atende e agenda as clientes da sua clínica de estética no WhatsApp, 24h por dia. R$497 de setup e R$397 por mês.",
+    description: DESCRIPTION,
     url: "https://bella.savinoteam.tech",
     siteName: "Bella by Savino",
     locale: "pt_BR",
@@ -29,8 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bella, atrai, atende e agenda para clínica de estética",
-    description:
-      "A Bella atrai, atende e agenda as clientes da sua clínica de estética no WhatsApp, 24h por dia. R$497 de setup e R$397 por mês.",
+    description: DESCRIPTION,
   },
 }
 

@@ -31,13 +31,13 @@ export function Pricing() {
           <div className="sheen-track" aria-hidden />
           <div className="relative rounded-[calc(1.75rem-1.5px)] bg-white p-8 md:p-10">
             <div className="text-center">
-              <div className="flex items-baseline justify-center gap-2">
+              <div className="flex flex-wrap items-baseline justify-center gap-x-2">
                 <span className="font-serif text-6xl font-medium tracking-tight text-[#0F0F0F]">
                   R$497
                 </span>
                 <span className="text-[#737373] text-lg">setup único</span>
               </div>
-              <div className="mt-2 flex items-baseline justify-center gap-2">
+              <div className="mt-2 flex flex-wrap items-baseline justify-center gap-x-2">
                 <span className="font-serif text-3xl font-medium text-[#0F0F0F]">
                   + R$397
                 </span>
