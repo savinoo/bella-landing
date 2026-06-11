@@ -31,12 +31,22 @@ export function Pricing() {
           <div className="sheen-track" aria-hidden />
           <div className="relative rounded-[calc(1.75rem-1.5px)] bg-white p-8 md:p-10">
             <div className="text-center">
-              <p className="text-[#404040] leading-relaxed">
-                Cada clínica tem um volume e uma realidade. Por isso a gente
-                monta a proposta junto com você, com uma entrada pra começar e
-                uma parte que só vale quando a Bella prova resultado no seu
-                WhatsApp. A mensalidade cobre a operação, o monitoramento e os
-                ajustes.
+              <div className="flex items-baseline justify-center gap-2">
+                <span className="font-serif text-6xl font-medium tracking-tight text-[#0F0F0F]">
+                  R$497
+                </span>
+                <span className="text-[#737373] text-lg">setup único</span>
+              </div>
+              <div className="mt-2 flex items-baseline justify-center gap-2">
+                <span className="font-serif text-3xl font-medium text-[#0F0F0F]">
+                  + R$397
+                </span>
+                <span className="text-[#737373] text-lg">por mês</span>
+              </div>
+              <p className="mt-5 text-[#404040] leading-relaxed">
+                O setup deixa a Bella no ar com a voz, os procedimentos e a agenda
+                da sua clínica. A mensalidade cobre a operação, o monitoramento e
+                os ajustes de todo mês.
               </p>
             </div>
 

@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero"
 import { Reveal } from "@/components/Reveal"
 import { FunilCompleto } from "@/components/FunilCompleto"
 import { ValueBullets } from "@/components/ValueBullets"
+import { RecursosDemo } from "@/components/RecursosDemo"
 import { ComoFunciona } from "@/components/ComoFunciona"
 import { PainelResultado } from "@/components/PainelResultado"
 import { FAQ } from "@/components/FAQ"
@@ -22,6 +23,9 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <ValueBullets />
+        </Reveal>
+        <Reveal>
+          <RecursosDemo />
         </Reveal>
         <Reveal>
           <ComoFunciona />

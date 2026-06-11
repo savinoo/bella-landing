@@ -16,11 +16,11 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Bella, atrai, atende e agenda para clínica de estética | Savino",
   description:
-    "A gente traz cliente nova com conteúdo, a Bella responde no WhatsApp 24 horas e agenda no Google Calendar, e você vê de onde veio cada cliente. Feita no Rio, a gente vai até a sua clínica.",
+    "A Bella atrai, atende e agenda as clientes da sua clínica de estética no WhatsApp, 24h por dia. R$497 de setup e R$397 por mês.",
   openGraph: {
     title: "Bella, atrai, atende e agenda para clínica de estética",
     description:
-      "Traz cliente nova, atende no WhatsApp 24h, agenda no Calendar e mostra de onde veio cada cliente. Feita no Rio, a gente vai até você.",
+      "A Bella atrai, atende e agenda as clientes da sua clínica de estética no WhatsApp, 24h por dia. R$497 de setup e R$397 por mês.",
     url: "https://bella.savinoteam.tech",
     siteName: "Bella by Savino",
     locale: "pt_BR",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bella, atrai, atende e agenda para clínica de estética",
     description:
-      "Traz cliente nova, atende no WhatsApp 24h, agenda no Calendar e mostra de onde veio cada cliente. Feita no Rio, a gente vai até você.",
+      "A Bella atrai, atende e agenda as clientes da sua clínica de estética no WhatsApp, 24h por dia. R$497 de setup e R$397 por mês.",
   },
 }
 
