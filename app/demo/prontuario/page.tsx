@@ -1,7 +1,7 @@
 import { DemoShell } from "@/components/demo/DemoShell"
 import { ProntuarioDemo } from "@/components/demo/ProntuarioDemo"
 
-export const metadata = { title: "Ficha da cliente — Bella" }
+export const metadata = { title: "Ficha da cliente | Bella" }
 
 export default function DemoProntuarioPage() {
   return (
