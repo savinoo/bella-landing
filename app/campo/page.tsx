@@ -74,7 +74,7 @@ const objecoes = [
 
 const nuncaFazer = [
   "Falar de concorrência ou criar urgência falsa",
-  "Anunciar trial, desconto ou isenção (isenção dos 3 primeiros é carta na manga, só depois de objeção real de preço)",
+  "Trial é oferta de boca na visita, nunca material público nem mensagem fria. Desconto e isenção de setup continuam carta na manga",
   "Pedir reunião ou visita longa na abertura, o menor passo é sempre o QR",
   "Monólogo de funcionalidades, uma pergunta por vez",
   "Prometer que a Bella não erra",
