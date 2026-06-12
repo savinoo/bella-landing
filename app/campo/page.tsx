@@ -54,6 +54,11 @@ const objecoes = [
     a: "O teste de trinta dias não custa nada e você decide com os números na mão. Depois são R$497 de setup e R$397 por mês. Se a Bella salvar duas clientes de madrugada no mês, ela se pagou.",
   },
   {
+    q: "Já temos IA no WhatsApp.",
+    a: "Que bom, vocês já saíram na frente da maioria. Me tira uma curiosidade, ela marca direto na agenda de vocês, cobra o sinal e sabe o saldo do pacote da cliente, ou ela responde e a equipe termina o resto na mão?",
+    nota: "escuta; depois, manda um oi nesse número como se fosse cliente e compara com a sua. Se a sua fizer tudo igual, me fala e eu sigo meu caminho",
+  },
+  {
     q: "Já temos atendente.",
     a: "E continua tendo. A Bella trabalha quando ela não está e filtra o repetitivo de dia. Sua atendente vira a supervisora, ela assume qualquer conversa com um toque.",
   },
