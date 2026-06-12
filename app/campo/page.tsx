@@ -36,22 +36,22 @@ const ROTA_MAPS_URL =
   "https://www.google.com/maps/dir/?api=1&origin=Esta%C3%A7%C3%A3o%20Saens%20Pe%C3%B1a%2C%20Pra%C3%A7a%20Saens%20Pe%C3%B1a%2C%20Tijuca%2C%20Rio%20de%20Janeiro&destination=Rua%20Conde%20de%20Bonfim%2C%2044%2C%20Tijuca%2C%20Rio%20de%20Janeiro&waypoints=Rua%20Desembargador%20Izidro%2C%2018%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CPra%C3%A7a%20Saens%20Pe%C3%B1a%2C%2045%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CRua%20Conde%20de%20Bonfim%2C%20375%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CRua%20Conde%20de%20Bonfim%2C%20346%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CRua%20Conde%20de%20Bonfim%2C%20106%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CRua%20Conde%20de%20Bonfim%2C%2099%2C%20Tijuca%2C%20Rio%20de%20Janeiro&travelmode=walking"
 
 const paradas = [
-  { onde: "Desembargador Izidro 18, sala 310", quem: "Dra. Cris Tavares (ÂNCORA)", nota: "demo savinoteam.tech/cris no bolso" },
-  { onde: "Mesmo prédio, sala 509", quem: "Clínica Tiago Silveira", nota: "dermato solo, agenda cheia de procedimento" },
-  { onde: "Shopping 45 da praça, salas 1006-1009", quem: "Maison Regato", nota: "25 anos na Tijuca, dona local" },
-  { onde: "Mesmo prédio, salas 701/702", quem: "Dra. Sandra Azevedo", nota: "dermato dona do negócio, confirmar na portaria" },
-  { onde: "Conde de Bonfim 375, sala 806", quem: "Ana Lucia Lino esteticista", nota: "solo, confirmar na portaria" },
-  { onde: "Conde de Bonfim 346, loja 309", quem: "O Bem Spa Urbano", nota: "biomédico, capta lead por WhatsApp no site" },
-  { onde: "Conde de Bonfim 106, loja 108", quem: "Pelo Sim Pelo Não depilação", nota: "loja de rua, dona no balcão" },
-  { onde: "Conde de Bonfim 99, sala 407", quem: "Espaço Priscila Lauredo", nota: "vende PACOTE de sessões, demo de pacotes cai como luva" },
-  { onde: "Conde de Bonfim 44, sala 1803", quem: "Dra. Thaís Sena HOF", nota: "atende em 2 endereços, WhatsApp é o gargalo" },
-  { onde: "Mesmo prédio, loja B", quem: "Bella Up depilação", nota: "decisão no balcão" },
+  { onde: "Desembargador Izidro 18, sala 310", quem: "Dra. Cris Tavares (ÂNCORA)", nota: "demo savinoteam.tech/cris no bolso · WhatsApp 21 99526-3089 · @dracristavares" },
+  { onde: "Shopping 45 da praça, salas 701/702", quem: "Dra. Sandra Azevedo", nota: "dermato dona do negócio, site de 2017, sem automação nenhuma · WhatsApp 21 97548-4724" },
+  { onde: "Mesmo prédio, salas 1006-1009", quem: "Maison Regato", nota: "25 anos na Tijuca, formulário de callback no site = dor aberta · WhatsApp 21 99638-1081 · @maison_regato" },
+  { onde: "Desembargador Izidro 18, sala 509", quem: "Clínica Tiago Silveira", nota: "dermato solo, agenda cheia de procedimento · WhatsApp 21 99300-8670 · @clinicatiagosilveira" },
+  { onde: "Conde de Bonfim 375, sala 806", quem: "Ana Lucia Lino esteticista", nota: "solo, quase sem presença digital, confirmar na portaria · só fixo 21 3088-8641" },
+  { onde: "Conde de Bonfim 346, loja 309", quem: "O Bem Spa Urbano", nota: "widget no site mas atendimento humano · WhatsApp 21 98638-4919 · @obemspaurbano" },
+  { onde: "Conde de Bonfim 106, loja 108", quem: "Pelo Sim Pelo Não depilação", nota: "loja de rua, site antigo sem WhatsApp · fixo 21 3901-3937" },
+  { onde: "Conde de Bonfim 99, sala 407", quem: "Espaço Priscila Lauredo", nota: "vende PACOTE de sessões, demo de pacotes cai como luva · WhatsApp 21 99977-7914 · @espacopriscilalauredo" },
+  { onde: "Conde de Bonfim 44, loja B", quem: "Bella Up depilação", nota: "decisão no balcão, agendamento por telefone fixo 21 2254-7644 · @bellaupoficial" },
+  { onde: "Mesmo prédio, sala 1803", quem: "Dra. Thaís Sena HOF", nota: "atende em 2 endereços, WhatsApp é o gargalo · WhatsApp 21 97424-2398 · @drathaissena" },
 ]
 
 const objecoes = [
   {
     q: "Quanto custa?",
-    a: "R$497 pra deixar no ar com a sua cara, seus preços e sua agenda, e R$397 por mês pela operação. Uma cliente nova que ela salvar de madrugada já paga o mês.",
+    a: "O teste de trinta dias não custa nada e você decide com os números na mão. Depois são R$497 de setup e R$397 por mês. Se a Bella salvar duas clientes de madrugada no mês, ela se pagou.",
   },
   {
     q: "Já temos atendente.",
@@ -152,7 +152,7 @@ export default function CampoPage() {
             R$497 de setup e R$397 por mês.
           </p>
           <p className="mt-2 text-sm leading-relaxed text-[#7A6A61]">
-            Isenção do setup só como carta na manga, nunca anunciada.
+            Oferta de boca na visita. Trinta dias de teste com o preço dito na mesma frase, depoimento com números combinado na entrada e métrica de fechamento acertada antes (se agendar X no mês, fechamos?). Máximo 3 testes simultâneos, ativação em 48h. Landing e cartão continuam só com o preço cheio.
           </p>
         </div>
 
@@ -260,10 +260,17 @@ export default function CampoPage() {
                     sua equipe assume quando quiser.
                   </Fala>
                   <Fala>
-                    O investimento é R$497 de setup e R$397 por mês. Se não
-                    fizer sentido pra vocês, você me fala e tá tudo certo, sem
-                    insistência. Faz sentido eu te mostrar com os procedimentos
-                    e preços da sua clínica?
+                    Minha proposta é assim. Trinta dias de teste pra você ver
+                    funcionando com seus preços e sua agenda, eu configuro tudo.
+                    No fim a gente olha os números juntos. Fazendo sentido, vira
+                    assinatura de R$497 de setup e R$397 por mês. Não fazendo,
+                    desliga e tá tudo certo.
+                  </Fala>
+                  <Fala>
+                    Em troca do teste eu peço uma coisa só, seu depoimento com
+                    os números se funcionar. E a gente já combina agora o que
+                    valida, tipo quantos agendamentos no mês fariam valer. Topa
+                    testar?
                   </Fala>
                 </div>
               </AccordionContent>
