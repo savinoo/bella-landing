@@ -23,6 +23,7 @@ const quickLinks = [
   { label: "Painel de exemplo", href: PAINEL_DEMO_URL, external: true },
   { label: "Formulário de instalação", href: "/instalacao", external: false },
   { label: "Cartão pra imprimir", href: "/campo/cartao", external: false },
+  { label: "QR na tela (plano B)", href: "/campo/qr", external: false },
   { label: "Site da Cris", href: "https://savinoteam.tech/cris", external: true },
 ]
 
