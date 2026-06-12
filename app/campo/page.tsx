@@ -26,10 +26,26 @@ const quickLinks = [
 ]
 
 const rota = [
-  "Tijuca, 8 a 12 clínicas, horário morto (10h-11h30 e 15h-16h30)",
+  "Corredor de 1,6 km, do metrô Saens Peña ao Largo da Segunda-Feira (volta pelo Afonso Pena)",
   "Cris Tavares é a visita âncora (leve o savinoteam.tech/cris aberto)",
   "NÃO visitar Danielle Sales (recusou em 01/06, estacionada, reativar só com prova real)",
   "Registrar cada visita em áudio no caminho pra próxima (nome, com quem falou, contato da dona, reação, próximo passo)",
+]
+
+const ROTA_MAPS_URL =
+  "https://www.google.com/maps/dir/?api=1&origin=Esta%C3%A7%C3%A3o%20Saens%20Pe%C3%B1a%2C%20Pra%C3%A7a%20Saens%20Pe%C3%B1a%2C%20Tijuca%2C%20Rio%20de%20Janeiro&destination=Rua%20Conde%20de%20Bonfim%2C%2044%2C%20Tijuca%2C%20Rio%20de%20Janeiro&waypoints=Rua%20Desembargador%20Izidro%2C%2018%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CPra%C3%A7a%20Saens%20Pe%C3%B1a%2C%2045%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CRua%20Conde%20de%20Bonfim%2C%20375%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CRua%20Conde%20de%20Bonfim%2C%20346%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CRua%20Conde%20de%20Bonfim%2C%20106%2C%20Tijuca%2C%20Rio%20de%20Janeiro%7CRua%20Conde%20de%20Bonfim%2C%2099%2C%20Tijuca%2C%20Rio%20de%20Janeiro&travelmode=walking"
+
+const paradas = [
+  { onde: "Desembargador Izidro 18, sala 310", quem: "Dra. Cris Tavares (ÂNCORA)", nota: "demo savinoteam.tech/cris no bolso" },
+  { onde: "Mesmo prédio, sala 509", quem: "Clínica Tiago Silveira", nota: "dermato solo, agenda cheia de procedimento" },
+  { onde: "Shopping 45 da praça, salas 1006-1009", quem: "Maison Regato", nota: "25 anos na Tijuca, dona local" },
+  { onde: "Mesmo prédio, salas 701/702", quem: "Dra. Sandra Azevedo", nota: "dermato dona do negócio, confirmar na portaria" },
+  { onde: "Conde de Bonfim 375, sala 806", quem: "Ana Lucia Lino esteticista", nota: "solo, confirmar na portaria" },
+  { onde: "Conde de Bonfim 346, loja 309", quem: "O Bem Spa Urbano", nota: "biomédico, capta lead por WhatsApp no site" },
+  { onde: "Conde de Bonfim 106, loja 108", quem: "Pelo Sim Pelo Não depilação", nota: "loja de rua, dona no balcão" },
+  { onde: "Conde de Bonfim 99, sala 407", quem: "Espaço Priscila Lauredo", nota: "vende PACOTE de sessões, demo de pacotes cai como luva" },
+  { onde: "Conde de Bonfim 44, sala 1803", quem: "Dra. Thaís Sena HOF", nota: "atende em 2 endereços, WhatsApp é o gargalo" },
+  { onde: "Mesmo prédio, loja B", quem: "Bella Up depilação", nota: "decisão no balcão" },
 ]
 
 const objecoes = [
@@ -158,6 +174,25 @@ export default function CampoPage() {
               </li>
             ))}
           </ul>
+          <a
+            href={ROTA_MAPS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 flex h-12 items-center justify-center rounded-full bg-[#0F0F0F] px-5 text-[15px] font-medium text-white"
+          >
+            Abrir rota a pé no Google Maps
+          </a>
+          <ol className="mt-4 space-y-2.5">
+            {paradas.map((p, i) => (
+              <li key={p.quem} className="rounded-xl border border-[#EADFD8] bg-white px-3.5 py-2.5">
+                <p className="text-[14px] font-semibold text-[#0F0F0F]">
+                  {i + 1}. {p.quem}
+                </p>
+                <p className="text-[13px] text-[#404040]">{p.onde}</p>
+                <p className="text-[12px] text-[#7A6A61]">{p.nota}</p>
+              </li>
+            ))}
+          </ol>
         </section>
 
         <section className="mt-8">

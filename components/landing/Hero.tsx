@@ -24,7 +24,7 @@ export function Hero() {
         <div className="max-w-3xl lg:max-w-4xl">
           <p className="rise inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#7A6A61]">
             <span aria-hidden className="size-1.5 rounded-full bg-[#FF6F61]" />
-            Feito no Rio pra clínicas de estética
+            Especializada em clínicas de estética cariocas
           </p>
 
           <h1
