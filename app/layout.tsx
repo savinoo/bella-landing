@@ -10,6 +10,7 @@ const geist = Geist({
 const fraunces = Fraunces({
   variable: "--font-serif",
   subsets: ["latin"],
+  style: ["normal", "italic"],
   axes: ["SOFT", "opsz"],
 })
 

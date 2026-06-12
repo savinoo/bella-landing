@@ -1,50 +1,36 @@
-import { SiteHeader } from "@/components/SiteHeader"
-import { Hero } from "@/components/Hero"
+import { Header } from "@/components/landing/Header"
+import { Hero } from "@/components/landing/Hero"
+import { Features } from "@/components/landing/Features"
+import { QuemEntrega } from "@/components/landing/QuemEntrega"
+import { Prova } from "@/components/landing/Prova"
+import { Preco } from "@/components/landing/Preco"
+import { Faq } from "@/components/landing/Faq"
+import { Footer } from "@/components/landing/Footer"
 import { Reveal } from "@/components/Reveal"
-import { FunilCompleto } from "@/components/FunilCompleto"
-import { ValueBullets } from "@/components/ValueBullets"
-import { RecursosDemo } from "@/components/RecursosDemo"
-import { ComoFunciona } from "@/components/ComoFunciona"
-import { PainelResultado } from "@/components/PainelResultado"
-import { FAQ } from "@/components/FAQ"
-import { Pricing } from "@/components/Pricing"
-import { VideoSection } from "@/components/VideoSection"
-import { LiveDemo } from "@/components/LiveDemo"
-import { Footer } from "@/components/Footer"
 
 export default function Home() {
   return (
     <>
-      <SiteHeader />
-      <main className="flex flex-col">
+      <Header />
+      <main>
         <Hero />
         <Reveal>
-          <FunilCompleto />
+          <Features />
         </Reveal>
         <Reveal>
-          <ValueBullets />
+          <QuemEntrega />
         </Reveal>
         <Reveal>
-          <RecursosDemo />
+          <Prova />
         </Reveal>
         <Reveal>
-          <ComoFunciona />
+          <Preco />
         </Reveal>
         <Reveal>
-          <PainelResultado />
+          <Faq />
         </Reveal>
-        <Reveal>
-          <FAQ />
-        </Reveal>
-        <Reveal>
-          <Pricing />
-        </Reveal>
-        <VideoSection />
-        <Reveal>
-          <LiveDemo />
-        </Reveal>
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }
