@@ -53,6 +53,14 @@ export function Footer() {
                 Painel de resultados
               </a>
             </li>
+            <li>
+              <Link
+                href="/instalacao"
+                className="text-sm text-[#5C5350] hover:text-[#0F0F0F] transition-colors"
+              >
+                Instalação
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
