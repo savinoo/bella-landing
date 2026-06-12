@@ -27,6 +27,7 @@ const quickLinks = [
 
 const rota = [
   "Corredor de 1,6 km, do metrô Saens Peña ao Largo da Segunda-Feira (volta pelo Afonso Pena)",
+  "10 portas em 8 endereços, o mapa mostra os prédios. Izidro 18, Shopping 45 e CB 44 têm DUAS portas cada (sala/andar na lista abaixo)",
   "Cris Tavares é a visita âncora (leve o savinoteam.tech/cris aberto)",
   "NÃO visitar Danielle Sales (recusou em 01/06, estacionada, reativar só com prova real)",
   "Registrar cada visita em áudio no caminho pra próxima (nome, com quem falou, contato da dona, reação, próximo passo)",
